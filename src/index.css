@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display), var(--font-sans);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom background pattern - barely visible elegant dotted pattern */
+.subtle-pattern {
+  background-image: radial-gradient(rgba(239, 68, 68, 0.03) 1px, transparent 1px), 
+                    radial-gradient(rgba(249, 115, 22, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Hide default input ranges track background for clean appearance */
+input[type="range"] {
+  accent-color: #ef4444;
+}
+
+/* Scale button animations */
+.scale-102 {
+  transform: scale(1.02);
+}
+.scale-105 {
+  transform: scale(1.05);
+}

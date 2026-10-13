@@ -1,0 +1,6 @@
+{
+  "name": "Pöytävarausjärjestelmä - Table Booking System",
+  "description": "Minimalistinen ja helppokäyttöinen pöydänvarausjärjestelmä ravintolalle suomeksi ja englanniksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
